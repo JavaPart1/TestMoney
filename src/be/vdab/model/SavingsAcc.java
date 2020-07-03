@@ -14,12 +14,16 @@ public class SavingsAcc extends Account{
         return calcAmount*interestPerc/100;
     }
 
+    public double getInterestPerc() {
+        return interestPerc;
+    }
+
     @Override
     public String toString() {
         return "SavingsAcc{" +
                 "owner: " + super.getOwner() +
-                "amount: " + super.getAmount() +
-                "interestPerc=" + interestPerc +
+                ", amount: " + super.getAmount() +
+                ", interestPerc: " + interestPerc + " % " +
                 ", curAcc=" + curAcc +
                 '}';
     }

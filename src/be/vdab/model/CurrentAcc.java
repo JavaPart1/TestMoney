@@ -13,4 +13,9 @@ public class CurrentAcc extends Account{
         this.setAmount(this.getAmount() - wdrawAmount);
 
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

@@ -15,10 +15,16 @@ public class AccApp {
         curAcou.deposit(500);
         // Transfer nr spaar
         curAcou.transfer(curAcou,savBook,400);
+        // geld opnemen
+        curAcou.withdraw(150);
+
+        // interst
+        double intAmount = savBook.intCalc(savBook.getAmount(),savBook.getInterestPerc());
 
         // Display
         System.out.println(curAcou);
         System.out.println(savBook);
+        System.out.println("Interest op savings : " + intAmount);
 
 
     }
